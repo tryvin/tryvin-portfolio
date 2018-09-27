@@ -1,0 +1,5 @@
+baseURL = "http://tryvin.github.io/"
+languageCode = "en-us"
+title = "Vin Souza (@tryvin)"
+theme = "freelancer"
+
