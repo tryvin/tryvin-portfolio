@@ -1,0 +1,20 @@
+<a class="w-dyn-item" href="{{ .link }}" target="_blank">
+    <div class="education-wrapper">
+        <div class="w-row">
+            <div class="w-col w-col-2">
+                <div style="background-image:url( {{ .image }} )" class="university-photo"></div>
+            </div>
+            <div class="w-col w-col-3">
+                <div>
+                    <div class="education-name">{{ .company }}</div>
+                </div>
+            </div>
+            <div class="w-col w-col-7">
+                <div>
+                    <div class="education-name"> {{ .title }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="date-wrapper different-color"> {{ .year }}</div>
+    </div>
+</a>

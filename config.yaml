@@ -1,0 +1,163 @@
+baseURL: http://tryvin.github.io/
+languageCode: en-us
+title: Vin Souza (@tryvin)
+theme: webflow
+params:
+    home:
+        aboutme: Hey! My name is Vin and I'm a jack-of-all-trades developer!
+        skills:
+            1frontend:
+                content:
+                    css:
+                        name: CSS & CSS3
+                        percentage: 90
+                    javascript:
+                        name: JavaScript
+                        percentage: 100
+                    html:
+                        name: HTML & HTML 5
+                        percentage: 87
+                    react:
+                        name: React & React Native
+                        percentage: 89
+                    ionic:
+                        name: Ionic
+                        percentage: 80
+                    phonegap:
+                        name: Phonegap
+                        percentage: 100
+            2backend:
+                color: blue
+                coding: coding
+                content:
+                    php:
+                        name: PHP (Pure, Laravel, CodeIgniter and Symfony)
+                        percentage: 100
+                    python:
+                        name: Python
+                        percentage: 89
+                    nodejs:
+                        name: Node.JS (Firebase, Express.JS, Electron Apps)
+                        percentage: 80
+                    android:
+                        name: Java & Kotlin for Android
+                        percentage: 87
+                    ios:
+                        name: Objective-C and Swift for iOS
+                        percentage: 83
+                    sql:
+                        name: SQL with Query Optimization
+                        percentage: 100
+                    caching:
+                        name: Caching and Search systems (Redis, ElasticSearch, MongoDB)
+                        percentage: 93
+            3management:
+                color: red
+                coding: assets
+                content:
+                    aws:
+                        name: AWS Stack
+                        percentage: 89
+                    devops:
+                        name: DevOPS with C/I, C/D
+                        percentage: 89
+                    sysadmin:
+                        name: Servers Administration & Automation
+                        percentage: 97
+                    scrum:
+                        name: Scrum & Scrum Master
+                        percentage: 99
+                    accountancy:
+                        name: USA and Brazilian Accountancy
+                        percentage: 78
+                    ux:
+                        name: U/X and U/I (Improving my skills every day)
+                        percentage: 78
+    footer:
+        text: 2018 Vin Souza
+        social:
+            networks:
+                linkedin:
+                    link: https://linkedin.com/in/tryvin
+                    title: LinkedIN
+                    icon: linkedin
+    workexperience:
+        1scalablepath:
+            title: Senior Developer
+            year: 2016 - Present
+            company: Scalable Path
+            image: https://media.licdn.com/dms/image/C560BAQEvUos6iYpaOw/company-logo_200_200/0?e=1545868800&v=beta&t=nekbhiH9xoewdnLBplhpvrnhC1o4KnaOAWirujmT8ps
+            link: https://www.scalablepath.com/
+        28sistemas:
+            title: DevOPS
+            year: 2013 - Present
+            company: 8Sistemas
+            image: https://media.licdn.com/dms/image/C4D0BAQF6h4TnSCGtEg/company-logo_200_200/0?e=1545868800&v=beta&t=0buhaBBJ0ICJKm81y6HbXfi_9Q4QXKhSNYfjAL80zNU
+            link: https://8sistemas.com
+        3pessoasinteressantes:
+            title: Head Developer
+            year: 2013 - 2014
+            company: Pessoas.VC
+            image: https://media.cdnandroid.com/f7/be/64/78/imagen-pessoas-vc-0thumb.jpg
+            link: http://pessoas.vc
+        4kinuxev:
+            title: Member
+            year: 2009 - 2013
+            company: KinuX E.v.
+            image: https://media.licdn.com/dms/image/C4D0BAQFE_kIxYFULlQ/company-logo_200_200/0?e=1545868800&v=beta&t=xDv7m_M9PJN7zH46bHiX-gIWgoI8h5dn8RThTLIoIYo
+            link: https://web.archive.org/web/20120501103116/http://kinuxlinux.org:80/
+        5hipersocial:
+            title: Developer and Scrum Master
+            year: 2008 - 2012
+            company: HiperSocial
+            image: https://pbs.twimg.com/profile_images/1083773832/thumb_400x400.png
+            link: https://web.archive.org/web/20150401070053/http://hipersocial.com/site/
+        6kde:
+            title: Brazilian Portuguese Translator
+            year: 2009 - 2011
+            company: KDE
+            image: https://media.licdn.com/dms/image/C560BAQG-Wr99X2H-6g/company-logo_200_200/0?e=1545868800&v=beta&t=sUjJCi0RkHsgsLJcWWohmVwyLP9CNmMLFXKkGbH7CHA
+            link: https://br.kde.org/
+        7staytrack:
+            title: I.T. Manager
+            year: 2008 - 2008
+            company: StayTrack
+            image: https://pbs.twimg.com/profile_images/658657238362497024/Xm1h-0o__400x400.jpg
+            link: http://staytrack.com.br/
+        8ifs:
+            title: Network Management Trainee
+            year: 2008 - 2008
+            company: IFS
+            image: https://media.licdn.com/dms/image/C4E0BAQG8eQm-HhkjXw/company-logo_200_200/0?e=1545868800&v=beta&t=UnX9rKk4PWHMkztLhVK-7Kw_dk6JzNsTAmqfjwpkGOM
+            link: http://www.ifs.edu.br/
+    education:
+        ufs:
+            title: Bachelor, Statistics
+            year: 2014 - 2019
+            school: UFS
+            image: https://media.licdn.com/dms/image/C4D0BAQGZFnP1c7xYyw/company-logo_200_200/0?e=1545868800&v=beta&t=SG2IOoqUBXMfrUe6nQi_Qcnsy-AkDGGo-bvliWh9QgM
+        fastmba:
+            title: Master of Business Administration - MBA
+            year: 2018 - 2018
+            school: Fast MBA
+            image: https://media.licdn.com/dms/image/C4D0BAQHlh2nnZIEaqw/company-logo_200_200/0?e=1545868800&v=beta&t=qLJBACyHC8x-bhu248TAZ_VGvho76ljgdEbNgqRNbDI
+            link: https://www.slideshare.net/slideshow/embed_code/key/vrbbK7N9TFJpme
+    certifications:
+        agilefoundation:
+            title: Agile Scrum Foundation
+            year: 2018 - Present
+            school: Estabilis
+            image: https://media.licdn.com/dms/image/C4E0BAQEZ2HHRkQHvAA/company-logo_200_200/0?e=1545868800&v=beta&t=8-Yfqi98RphQIQeD1mfCrl80ZIC2A8287Fsum-DFOdg
+            link: https://www.credential.net/1jeo6h7p
+        agilemanagmentwithscrum:
+            title: Agile Management with Scrum
+            year: 2018 - Present
+            school: Udemy
+            image: https://media.licdn.com/dms/image/C510BAQFKXnLDglG5qA/company-logo_200_200/0?e=1545868800&v=beta&t=C4GhaXvK0JcXVC8LHpQCigznstnfWCzC6ulLjiq9CA8
+            link: https://udemy-certificate.s3.amazonaws.com/pdf/UC-VDOD3PTN.pdf
+        devopsfoundation:
+            title: DevOPS Foundation
+            year: 2018 - Present
+            school: Estabilis
+            image: https://media.licdn.com/dms/image/C4E0BAQEZ2HHRkQHvAA/company-logo_200_200/0?e=1545868800&v=beta&t=8-Yfqi98RphQIQeD1mfCrl80ZIC2A8287Fsum-DFOdg
+            link: https://www.credential.net/4fb0pfmb
