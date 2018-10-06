@@ -6,6 +6,6 @@ fields:
 - type: text
   name: description
   label: Description
-- type: file
-  label: Icon
+- type: text
   name: icon
+  label: Icon
