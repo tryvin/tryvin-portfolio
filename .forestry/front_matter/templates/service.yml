@@ -1,0 +1,11 @@
+---
+label: Service
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: description
+  label: Description
+- type: file
+  label: Icon
+  name: icon
