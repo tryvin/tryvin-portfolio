@@ -1,15 +1,15 @@
-{{ define "main" }}
+{{ partial "head-with-lateral.html" . }}
     <div class="page-content">
         <div class="title-wrapper">
             <h3 class="resume-title">
-                <a href="{{.Permalink}}">{{ .Title }}</a>
+                <a href="/certification">Certifications</a>
             </h3>
         </div>
         <div>
             <div class="w-dyn-list">
                 <div class="w-dyn-items">
-                    {{ range .Pages  }}
-                        {{ partial "blog-list-item.html" . }}
+                    {{ range (where .Site.RegularPages.ByTitle "Type" "certification") }}
+                        {{ partial "education-no-date.html" . }}
                     {{ end }}
                 </div>
             </div>
@@ -23,4 +23,4 @@
             </a>
         </div>
     </div>
-{{ end }}
+{{ partial "footer-with-lateral.html" . }}

@@ -6,15 +6,14 @@
             </div>
             <div class="w-col w-col-3">
                 <div>
-                    <div class="education-name">{{ .Title }}</div>
+                    <div class="education-name">{{ .Params.school }}</div>
                 </div>
             </div>
             <div class="w-col w-col-7">
                 <div>
-                    <div class="education-name"> {{ .Params.description }}</div>
+                    <div class="education-name"> {{ .Title }}</div>
                 </div>
             </div>
         </div>
-        <div class="date-wrapper different-color"> {{ .Params.hiredate }}</div>
     </div>
 </a>

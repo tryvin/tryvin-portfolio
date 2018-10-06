@@ -4,6 +4,55 @@
     <body>
         <body>
             <div class="logo-container w-container">
-                <a href="/" class="w-inline-block w--current"><img src="https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd576318f76d5_logo.gif" width="350" /></a>
+                <a href="/" class="w-inline-block w--current">
+                    <span class="logo-title">Vin Souza</span>
+                </a>
             </div>
             <div class="container w-container">
+                <div class="w-row">
+                    <div class="w-col w-col-4 w-col-stack">
+                        <div class="author-wrapper">
+                            <div><img src="{{.Site.BaseURL}}img/tryvin.jpeg"/>
+                            </div>
+                            <div class="navigation-wrapper">
+                                <a href="/" class="nav-link w-inline-block w-clearfix w--current">
+                                    <div class="nav-text">About me</div>
+                                    <div class="nav-icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </a>
+                                <a href="/project" class="nav-link w-inline-block w-clearfix">
+                                    <div class="nav-text">Portfolio</div>
+                                    <div class="nav-icon">
+                                        <i class="fa fa-camera"></i>
+                                    </div>
+                                </a>
+                                <a href="/blog" class="nav-link w-inline-block w-clearfix">
+                                    <div class="nav-text">Blog</div>
+                                    <div class="nav-icon">
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                </a>
+                                <a href="/contact" class="nav-link w-inline-block w-clearfix">
+                                    <div class="nav-text">Contact</div>
+                                    <div class="nav-icon">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="social-wrapper">
+                                {{ range .Site.Params.footer.social.networks }}
+                                    <a href="{{ .link }}" class="social-icon w-inline-block" title="{{ .title }}">
+                                        <i class="fa fa-{{ .icon }}"></i>
+                                    </a>
+                                {{ end }}
+
+                                <p class="copyright">
+                                    &copy; {{ .Site.Params.footer.text }}
+                                    -
+                                    Design based on <a href="https://webflow.com/?utm_campaign=brandjs" target="_blank">Webflow</a> R Smith's theme
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-col w-col-8 w-col-stack">

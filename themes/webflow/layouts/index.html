@@ -1,175 +1,130 @@
-{{ partial "head.html" . }}
-<div class="w-row">
-    <div class="w-col w-col-4 w-col-stack">
-        <div class="author-wrapper">
-            <div><img src="img/tryvin.jpeg"/>
-            </div>
-            <div class="navigation-wrapper">
-                <a href="/" class="nav-link w-inline-block w-clearfix w--current">
-                    <div class="nav-text">About me</div>
-                    <div class="nav-icon"></div>
-                </a>
-                <a href="/portfolio" class="nav-link w-inline-block w-clearfix">
-                    <div class="nav-text">Portfolio</div>
-                    <div class="nav-icon camera"></div>
-                </a>
-                <a href="/blog" class="nav-link w-inline-block w-clearfix">
-                    <div class="nav-text">Blog</div>
-                    <div class="nav-icon blog"></div>
-                </a>
-                <a href="/contact" class="nav-link w-inline-block w-clearfix">
-                    <div class="nav-text">Contact</div>
-                    <div class="nav-icon contact"></div>
-                </a>
-            </div>
-            <div class="social-wrapper">
-                {{ range .Site.Params.footer.social.networks }}
-                <a href="{{ .link }}" class="social-icon w-inline-block" title="{{ .title }}"><i class="fa fa-{{ .icon }}"></i></a>
-                {{ end }}
-
-                <p class="copyright">© {{ .Site.Params.footer.text }}</p>
-            </div>
-        </div>
-    </div>
-    <div class="w-col w-col-8 w-col-stack">
+{{ partial "head-with-lateral.html" . }}
         <div class="page-content">
             <div class="title-wrapper">
-                <h3 class="resume-title">01. About me</h3></div>
-                <div>
-                    <h1 class="about-title">{{ .Site.Params.home.aboutme | safeHTML }}</h1>
-                </div>
-                <div class="space-divider"></div>
-                <div class="title-wrapper">
-                    <h3 class="resume-title">02. PROFESSIONAL SKILLS</h3>
-                </div>
+                <h3 class="resume-title">01. About me</h3>
+            </div>
+            <div>
+                <h1 class="about-title">{{ .Site.Params.home.aboutme | safeHTML }}</h1>
+            </div>
+            <div class="space-divider"></div>
 
-                {{ range .Site.Params.home.skills }}
-                    {{ $skillScope := . }}
-                    <div>
-                        {{ range .content }}
-                            <div class="skills-content">
-                                <div class="skills-name">{{ .name }}</div>
-                                <div class="skills-wrapper {{ $skillScope.coding }}-color">
-                                    <div class="skillis-percent {{ $skillScope.color }}-color" style="width: {{ .percentage }}%;"></div>
-                                </div>
-                            </div>
+            <div class="title-wrapper">
+                <h3 class="resume-title"><a href="/blog">02. Latest Blog Post</a></h3>
+            </div>
+            <div>
+                <div class="w-dyn-list">
+                    <div class="w-dyn-items">
+                        {{ range first 1 (where .Site.RegularPages "Type" "blog") }}
+                            {{ partial "blog-list-item.html" . }}
                         {{ end }}
-                    </div>
-                    <div class="space-divider"></div>
-                {{ end }}
-
-                <div class="title-wrapper">
-                    <h3 class="resume-title">03. Education</h3>
-                </div>
-                <div>
-                    <div class="w-dyn-list">
-                        <div class="w-dyn-items">
-                            {{ range .Site.Params.education }}
-                                {{ partial "education.html" . }}
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-                <div class="space-divider"></div>
-
-                <div class="title-wrapper">
-                    <h3 class="resume-title">04. Certifications</h3>
-                </div>
-                <div>
-                    <div class="w-dyn-list">
-                        <div class="w-dyn-items">
-                            {{ range .Site.Params.certifications }}
-                                {{ partial "education.html" . }}
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-                <div class="space-divider"></div>
-
-                <div class="title-wrapper">
-                    <h3 class="resume-title">05. Work experience</h3></div>
-                    <div>
-                        <div class="w-dyn-list">
-                            <div class="w-dyn-items">
-                                {{ range .Site.Params.workexperience }}
-                                    {{ partial "workexperience.html" . }}
-                                {{ end }}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="space-divider"></div>
-                    <div class="title-wrapper">
-                        <h3 class="resume-title">06. My Services</h3></div>
-                        <div>
-                            <div data-animation="slide" data-duration="500" data-infinite="1" data-nav-spacing="4" class="services-slide w-slider">
-                                <div class="w-slider-mask">
-                                    <div class="w-slide">
-                                        <div class="w-row">
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-1"></div>
-                                                    <h4>Seo Optimizasion</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-2"></div>
-                                                    <h4>Mobile Server</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-slide">
-                                        <div class="w-row">
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-3"></div>
-                                                    <h4>PC Data Center</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-4"></div>
-                                                    <h4>Professional Photography</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-slide">
-                                        <div class="w-row">
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-6"></div>
-                                                    <h4>Awwards Web Pages</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                            <div class="w-col w-col-6">
-                                                <div class="services-wrapper">
-                                                    <div class="service-icon icon-5"></div>
-                                                    <h4>3D Design</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
-                            </div>
-                        </div>
-                        <div class="space-divider"></div>
-                        <div class="line-divider"></div>
-                        <div class="align-center">
-                            <a href="pdf/Curriculum.pdf" class="button red-color w-inline-block w-clearfix" target="_blank">
-                                <div class="icon-button"></div>
-                                <div class="button-text">Download my CV</div>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
-        {{ partial "footer.html" . }}
+            <div class="space-divider"></div>
+
+            <div class="title-wrapper">
+                <h3 class="resume-title">03. Professional Skills</h3>
+            </div>
+
+            {{ range .Site.Params.home.skills }}
+                {{ $skillScope := . }}
+                <div>
+                    {{ range .content }}
+                    <div class="skills-content">
+                        <div class="skills-name">{{ .name }}</div>
+                        <div class="skills-wrapper {{ $skillScope.coding }}-color">
+                            <div class="skillis-percent {{ $skillScope.color }}-color" style="width: {{ .percentage }}%;"></div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="space-divider"></div>
+            {{ end }}
+
+            <div class="title-wrapper">
+                <h3 class="resume-title"><a href="/education">04. Education</a></h3>
+            </div>
+            <div>
+                <div class="w-dyn-list">
+                    <div class="w-dyn-items">
+                        {{ range (where .Site.RegularPages "Type" "education") }}
+                            {{ partial "education.html" . }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="space-divider"></div>
+
+            <div class="title-wrapper">
+                <h3 class="resume-title"><a href="/certification">05. Certifications</a></h3>
+            </div>
+            <div>
+                <div class="w-dyn-list">
+                    <div class="w-dyn-items">
+                        {{ range (where .Site.RegularPages.ByTitle "Type" "certification") }}
+                            {{ partial "education.html" . }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="space-divider"></div>
+
+            <div class="title-wrapper">
+                <h3 class="resume-title">
+                    <a href="/workexperience">06. Work experience</a>
+                </h3>
+            </div>
+            <div>
+                <div class="w-dyn-list">
+                    <div class="w-dyn-items">
+                        {{ range (where .Site.RegularPages "Type" "workexperience") }}
+                            {{ partial "workexperience.html" . }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="space-divider"></div>
+            <div class="title-wrapper">
+                <h3 class="resume-title"><a href="/service">07. My Services</a></h3>
+            </div>
+            <div>
+                <div data-animation="slide" data-duration="500" data-infinite="1" data-nav-spacing="4" class="services-slide w-slider">
+                    <div class="w-slider-mask">
+                        {{ $serviceList := (where .Site.RegularPages "Type" "service")}}
+                        {{ $serviceLength := (len $serviceList) }}
+                        {{ $slideCount := 1 }}
+
+                        {{ range $index, $element := $serviceList }}
+                            {{ if (eq $slideCount 1) }}
+                                <div class="w-slide">
+                                    <div class="w-row">
+                            {{ end }}
+
+                                        {{ partial "service-slide.html" . }}
+
+                            {{ if or (eq (add $index 1) $serviceLength) (eq $slideCount 2)}}
+                                    </div>
+                                </div>
+                                {{ $slideCount = 1 }}
+                            {{ else }}
+                                {{ $slideCount = (add $slideCount 1)}}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+                </div>
+            </div>
+            <div class="space-divider"></div>
+            <div class="line-divider"></div>
+            <div class="align-center">
+                <a href="pdf/Curriculum.pdf" class="button red-color w-inline-block w-clearfix" target="_blank">
+                    <div class="icon-button"></div>
+                    <div class="button-text">Download my CV</div>
+                </a>
+
+                <a href="/hire-me" class="button w-inline-block w-clearfix">
+                    <div class="button-text">Hire me!</div>
+                </a>
+            </div>
+        </div>
+{{partial "footer-with-lateral.html" . }}

@@ -1865,38 +1865,10 @@ textarea.w-input,textarea.w-select{
      height: 37px;
      margin-right: 3px;
      margin-left: 3px;
+     padding-top: 3px;
      border: 1px solid #bbb;
      border-radius: 100%;
-}
- .social-icon.facebook {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd564928f76bf_fa-facebook_100_0_7c7c7c_none.png");
-     background-position: 50% 50%;
-     background-size: 14px;
-     background-repeat: no-repeat;
-}
- .social-icon.twitter {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd50f498f76c0_fa-twitter_100_0_7c7c7c_none.png");
-     background-position: 50% 50%;
-     background-size: 14px;
-     background-repeat: no-repeat;
-}
- .social-icon.behance {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd56fb68f76c1_fa-behance_100_0_7c7c7c_none.png");
-     background-position: 50% 50%;
-     background-size: 16px;
-     background-repeat: no-repeat;
-}
- .social-icon.pinterest {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd5b9008f76c2_fa-pinterest-p_100_0_7c7c7c_none.png");
-     background-position: 50% 50%;
-     background-size: 14px;
-     background-repeat: no-repeat;
-}
- .social-icon.instagram {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd5ea2f8f76c9_fa-instagram_100_0_7c7c7c_none.png");
-     background-position: 50% 50%;
-     background-size: 14px;
-     background-repeat: no-repeat;
+     font-size: 24px;
 }
  .nav-link {
      display: block;
@@ -1931,23 +1903,13 @@ textarea.w-input,textarea.w-select{
      height: 28px;
      margin-bottom: -21px;
      float: right;
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd51ad28f76c3_mfg-labs-iconset_2014-07-29_user_male_100_0_ffffff_none.png");
      background-position: 50% 50%;
      background-size: 17px;
      background-repeat: no-repeat;
+     font-size: 17px;
+     color: white;
 }
- .nav-icon.camera {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd5073d8f76c8_font-awesome_4-6-3_camera_100_0_ffffff_none.png");
-     background-size: 17px;
-}
- .nav-icon.blog {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd566a68f76c7_font-awesome_4-6-3_pencil_100_0_ffffff_none.png");
-     background-size: 17px;
-}
- .nav-icon.contact {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd54f088f76c6_font-awesome_4-6-3_phone_100_0_ffffff_none.png");
-     background-size: 17px;
-}
+
  .page-content {
      padding: 30px 30px 50px;
      background-color: #fff;
@@ -2109,42 +2071,7 @@ textarea.w-input,textarea.w-select{
      margin-right: auto;
      margin-left: auto;
 }
- .service-icon.icon-1 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd50b9d8f76ca_font-awesome_4-6-3_search_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 30px;
-     background-repeat: no-repeat;
-}
- .service-icon.icon-2 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd5c2398f76cb_font-awesome_4-6-3_mobile-phone_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 30px;
-     background-repeat: no-repeat;
-}
- .service-icon.icon-3 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd54b238f76cd_font-awesome_4-6-3_laptop_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 35px;
-     background-repeat: no-repeat;
-}
- .service-icon.icon-4 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd531a58f76cc_font-awesome_4-6-3_camera-retro_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 30px;
-     background-repeat: no-repeat;
-}
- .service-icon.icon-5 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd55a388f76ce_font-awesome_4-6-3_rocket_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 30px;
-     background-repeat: no-repeat;
-}
- .service-icon.icon-6 {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd51e378f76cf_font-awesome_4-6-3_trophy_100_0_272727_none.png");
-     background-position: 50% 50%;
-     background-size: 30px;
-     background-repeat: no-repeat;
-}
+
  .line-divider {
      width: 100%;
      height: 1px;
@@ -2194,14 +2121,6 @@ textarea.w-input,textarea.w-select{
      background-position: 50% 50%;
      background-size: 18px;
      background-repeat: no-repeat;
-}
- .icon-button.icon-print {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd5f7e38f76d1_font-awesome_4-6-3_print_100_0_ffffff_none.png");
-     background-size: 18px;
-}
- .icon-button.icon-back {
-     background-image: url("https://uploads-ssl.webflow.com/5bad3f68b04cd5cfc08f76ae/5bad3f68b04cd594368f76d7_font-awesome_4-6-3_mail-reply_100_0_ffffff_none.png");
-     background-size: 16px;
 }
  .button-text {
      display: inline-block;
@@ -2427,4 +2346,14 @@ textarea.w-input,textarea.w-select{
          width: 200px;
          height: 200px;
     }
+}
+
+span.logo-title {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 70px;
+}
+
+.resume-title a, h1 a, h2 a, h3 a, h4 a, h5 a {
+    color: black;
 }

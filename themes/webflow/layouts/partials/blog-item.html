@@ -1,0 +1,17 @@
+<div class="w-dyn-item">
+    <a href="{{ .Permalink }}" class="blog-post-wrapper w-inline-block">
+        {{if and .Params.image (ne .Params.image "")}}
+            <div style="background-image:url( {{ .Params.image }} )" class="blog-image"></div>
+        {{ end }}
+
+        <div class="created-on">Created on:</div>
+        <div class="created-on font">
+            {{.Date.Format "January 2, 2006"}}
+        </div>
+        <h1 class="blog-title">
+            {{.Title}}
+        </h1>
+        {{ .Summary }}
+    </a>
+    <div class="line-divider"></div>
+</div>

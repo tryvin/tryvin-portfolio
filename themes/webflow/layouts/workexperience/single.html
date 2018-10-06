@@ -1,0 +1,42 @@
+{{ partial "head-with-lateral.html" . }}
+    <div class="page-content">
+        <div class="title-wrapper">
+            <h3 class="resume-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+        </div>
+        <div>
+            <div class="w-dyn-list">
+                <div class="w-dyn-items">
+                    {{ partial "workexperience-no-date.html" . }}
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="w-richtext">
+                {{ .Content }}
+            </div>
+        </div>
+
+        <div class="space-divider"></div>
+        <div class="align-center">
+            <a href="pdf/Curriculum.pdf" class="button red-color w-inline-block w-clearfix" target="_blank">
+                <div class="icon-button"></div>
+                <div class="button-text">Download my CV</div>
+            </a>
+
+            {{ if ne .Params.companylink ""}}
+                <a href="{{.Params.companylink}}" class="button w-inline-block w-clearfix" target="_blank">
+                    <div class="button-text"><i class="fa fa-arrow-right"></i> Visit {{ .Title }}'s Website</div>
+                </a>
+            {{ end }}
+        </div>
+        <div class="space-divider"></div>
+        <div class="align-center">
+            <a href="/workexperience" class="button w-inline-block w-clearfix">
+                <div class="button-text"><i class="fa fa-arrow-left"></i> Back to Work Experience</div>
+            </a>
+        </div>
+    </div>
+{{ partial "footer-with-lateral.html" . }}
