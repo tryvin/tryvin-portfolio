@@ -19,5 +19,3 @@ fields:
   label: Cert Link
   name: certlink
   description: Certification PDF Link
-pages:
-- content/certification/hipaa-privacy-&-security-training-for-business-associates.md
