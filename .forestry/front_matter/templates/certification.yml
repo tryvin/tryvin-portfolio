@@ -1,0 +1,21 @@
+---
+label: Certification
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Icon
+  name: icon
+  description: Icon for certification
+- type: text
+  label: Cert date
+  name: certdate
+  description: Certification date
+- type: text
+  label: School
+  name: school
+  description: Organization for certifiation
+- type: text
+  label: Cert Link
+  name: certlink
+  description: Certification PDF Link
