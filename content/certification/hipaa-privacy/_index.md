@@ -1,6 +1,6 @@
 +++
 certdate = "2018 - Present"
-certlink = ""
+certlink = "/certification/hipaa-privacy/certification.pdf"
 date = "2018-10-08T16:07:57-03:00"
 icon = "https://myhipaatraining.com/images/banner1.jpg"
 school = "HIPAA Group"
