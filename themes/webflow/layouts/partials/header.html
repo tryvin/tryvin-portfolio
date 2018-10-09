@@ -1,10 +1,21 @@
 <head>
     <meta charset="utf-8" />
-    <title>{{ .Site.Title }}</title>
-    <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" name="description" />
-    <meta content="Vin Souza's Dev Life" property="og:title" />
-    <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" property="og:description" />
-    <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" name="twitter:card" />
+    {{ if and .Title (not .IsHome)}}
+        <title>{{ .Title }} - Vin Souza</title>
+        <meta content="{{.Summary | safeHTML}}" name="description" />
+        <meta content="{{.Title}} - Vin Souza" property="og:title" />
+
+        <meta content="{{.Summary | safeHTML}}" property="og:description" />
+        <meta content="{{.Title}} - Vin Souza" name="twitter:card" />
+    {{ else }}
+        <title>{{ .Site.Title }}</title>
+        <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" name="description" />
+        <meta content="Vin Souza's Dev Life" property="og:title" />
+
+        <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" property="og:description" />
+        <meta content="Vin Souza is a Senior Full Stack Software Developer, with experience with Scrum, and DevOPS Skills" name="twitter:card" />
+    {{ end }}
+
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="HugoCMS" name="generator" />
     <link href="{{.Site.BaseURL}}css/webflow.css" rel="stylesheet" type="text/css" />
