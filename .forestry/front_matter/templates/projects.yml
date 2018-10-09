@@ -12,6 +12,9 @@ fields:
 - type: text
   name: company
   label: Company
+- type: text
+  name: icon
+  label: Icon
 pages:
 - content/project/reverse-proxy-with-squid-to-improve-performance.md
 - content/project/live-car-tracking-for-the-customers.md
