@@ -199,6 +199,11 @@ img{
     vertical-align:middle;
     display:inline-block
 }
+
+img.author-image {
+    width: 100%;
+}
+
 html.w-mod-touch *{
     background-attachment:scroll !important
 }
