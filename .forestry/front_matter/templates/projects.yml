@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/animal-kennel-management-system.md
 - content/project/austin-golf-project.md
 - content/project/migration-and-maintance-of-linux-servers-at-the-aws-stack.md
 - content/project/salesforce-sentiment-analysis-system-for-classifying-best-business-opportunities.md
