@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/pos-version-with-qt-for-offline-usage.md
 - content/project/pos-system-running-at-a-cloud-stack.md
 - content/project/creating-a-in-house-cdn-for-images.md
 - content/project/real-time-chat-engine-using-python-and-tornado.md
