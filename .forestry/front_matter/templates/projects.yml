@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/pure-android-dating-app.md
 - content/project/implement-notifications-system-on-top-of-live-chat-system.md
 - content/project/real-time-chat-engine-using-python-and-tornado.md
 - content/project/create-a-in-house-parser-for-opensocial-canvas-xml.md
