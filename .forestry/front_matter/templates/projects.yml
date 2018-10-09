@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/migration-and-maintenance-of-linux-servers.md
 - content/project/integration-with-brazilian's-eletronic-tax-systems.md
 - content/project/pos-version-with-qt-for-offline-usage.md
 - content/project/pos-system-running-at-a-cloud-stack.md
