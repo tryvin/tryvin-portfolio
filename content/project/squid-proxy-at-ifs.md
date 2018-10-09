@@ -1,10 +1,11 @@
 ---
-title: "Squid Proxy at Ifs"
-date: 2018-10-06T18:38:31-03:00
-draft: false
-projectdate: "2018-Present"
-description: ""
-company: ""
----
+title: Squid Proxy at IFS
+date: 2018-10-06 21:38:31 +0000
+projectdate: 2008 - 2008
+description: ''
+company: ''
 
-Project text description here
+---
+This was one of my first projects at IFS, setting up and keeping it running smoothly to handle the user network traffic from the whole institute.
+
+Made us save 40% on bandwidth, with good network rules, caching Windows updates, and Anti-virus updates.
