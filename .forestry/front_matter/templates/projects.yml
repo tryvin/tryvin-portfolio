@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/create-a-in-house-parser-for-opensocial-canvas-xml.md
 - content/project/creating-a-in-house-cdn-for-images.md
 - content/project/dating-application-for-orkut.md
 - content/project/translation-of-announcements-and-software-modules.md
