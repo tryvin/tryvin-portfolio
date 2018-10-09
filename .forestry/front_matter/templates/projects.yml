@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/migration-and-maintance-of-linux-servers-at-the-aws-stack.md
 - content/project/salesforce-sentiment-analysis-system-for-classifying-best-business-opportunities.md
 - content/project/hybrid-using-react-native-and-electron-for-a-pos-system.md
 - content/project/migration-and-maintenance-of-linux-servers.md
