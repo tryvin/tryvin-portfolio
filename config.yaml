@@ -4,7 +4,7 @@ title: Vin Souza (@tryvin)
 theme: webflow
 params:
     home:
-        aboutme: Hey! My name is Vin, and I'm a Senior Software Developer with extensive experience in high concurrency systems on the web, databases of all sizer. Jack-of-all-trades. Addicted to problem solving.
+        aboutme: Hey! My name is Vin, and I'm a Senior Software Developer with extensive experience in high concurrency systems on the web, databases of all sizes. Jack-of-all-trades. Addicted to problem solving.
         skills:
             1frontend:
                 content:
