@@ -2,6 +2,7 @@
 company = "StayTrack"
 date = "2018-10-08T22:49:23-03:00"
 description = ""
+icon = "https://pbs.twimg.com/profile_images/658657238362497024/Xm1h-0o__400x400.jpg"
 projectdate = "2008 - 2008"
 title = "Live Car Tracking for the Customers"
 
