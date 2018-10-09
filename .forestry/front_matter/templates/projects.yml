@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/dating-application-for-orkut.md
 - content/project/translation-of-announcements-and-software-modules.md
 - content/project/reverse-proxy-with-squid-to-improve-performance.md
 - content/project/squid-proxy-at-ifs.md
