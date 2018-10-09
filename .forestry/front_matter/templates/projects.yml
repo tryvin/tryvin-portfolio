@@ -16,6 +16,7 @@ fields:
   name: icon
   label: Icon
 pages:
+- content/project/hybrid-using-react-native-and-electron-for-a-pos-system.md
 - content/project/migration-and-maintenance-of-linux-servers.md
 - content/project/integration-with-brazilian's-eletronic-tax-systems.md
 - content/project/pos-version-with-qt-for-offline-usage.md
