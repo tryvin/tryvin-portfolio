@@ -2,7 +2,6 @@
 company = "StayTrack"
 date = "2018-10-08T22:49:23-03:00"
 description = ""
-draft = true
 projectdate = "2008 - 2008"
 title = "Live Car Tracking for the Customers"
 

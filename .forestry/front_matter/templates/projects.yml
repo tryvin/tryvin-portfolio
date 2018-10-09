@@ -13,4 +13,5 @@ fields:
   name: company
   label: Company
 pages:
+- content/project/reverse-proxy-with-squid-to-improve-performance.md
 - content/project/live-car-tracking-for-the-customers.md
