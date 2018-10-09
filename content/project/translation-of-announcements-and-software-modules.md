@@ -2,7 +2,6 @@
 company = "KDE"
 date = "2018-10-08T23:03:23-03:00"
 description = ""
-draft = true
 icon = "https://media.licdn.com/dms/image/C560BAQG-Wr99X2H-6g/company-logo_200_200/0?e=1545868800&v=beta&t=sUjJCi0RkHsgsLJcWWohmVwyLP9CNmMLFXKkGbH7CHA"
 projectdate = "2009 - 2011"
 title = "Translation of Announcements and Software Modules"
