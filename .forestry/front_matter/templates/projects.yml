@@ -1,0 +1,14 @@
+---
+label: Projects
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: projectdate
+  label: Project Date
+- type: text
+  name: description
+  label: Description
+- type: text
+  name: company
+  label: Company
