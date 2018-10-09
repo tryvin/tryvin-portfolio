@@ -16,6 +16,6 @@ fields:
   name: icon
   label: Icon
 pages:
-- content/project/squid-proxy-at-ifs.md
 - content/project/reverse-proxy-with-squid-to-improve-performance.md
+- content/project/squid-proxy-at-ifs.md
 - content/project/live-car-tracking-for-the-customers.md

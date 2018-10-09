@@ -2,6 +2,7 @@
 company = "StayTrack"
 date = "2018-10-08T22:52:31-03:00"
 description = ""
+icon = "https://pbs.twimg.com/profile_images/658657238362497024/Xm1h-0o__400x400.jpg"
 projectdate = "2008 - 2008"
 title = "Reverse Proxy with Squid to improve performance"
 
