@@ -1,0 +1,11 @@
+---
+label: Blog
+hide_body: false
+is_partial: false
+fields:
+- type: file
+  name: icon
+  label: Icon
+- type: file
+  name: image
+  label: Image
