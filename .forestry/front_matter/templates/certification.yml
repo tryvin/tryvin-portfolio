@@ -19,3 +19,5 @@ fields:
   label: Cert Link
   name: certlink
   description: Certification PDF Link
+pages:
+- content/certification/hadoop-mapreduce-in-depth.md
